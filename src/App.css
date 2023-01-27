@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+  background:#eee;
+}
+
+#root {
+  width:250px;
+  padding:15px;
+}
+input#file {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+select#convert {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-bottom:15px;
+}
+.download-wrapper {
+  max-width:300px;
+  margin:auto;
+  width:100%;
+}
+.download-wrapper a {
+    background: #333;
+    padding: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.size-buttons {
+    display: flex;
+    max-width: 300px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.size-buttons .buttons {
+    margin: 0 2.5px;
+    width: calc(50% - 5px);
+    margin-bottom: 5px;
+}
+button {
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 0;
+    background: none;
+    color: #000;
+    border: 2px dashed;
+    margin-bottom: 10px;
+}
+button:active,
+button:focus {
+    background: rgb(118, 1, 253);
+    color:#fff;
+    transition:.4s;
+}
+button:hover {
+  transition:.4s;
+  background:rgba(0,0,0,0.2);
+  cursor:pointer;
+}
+.upload-file {
+    padding: 50px;
+    max-width: 247px;
+    margin: auto;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px dashed #7600fd;
+    border-radius: 25px;
+    color:#7600fd;
+    cursor:pointer;
+    transition:.4s;
+
+
+}
+.upload-file:hover {
+  background:rgba(0,0,0,0.1);
+  transition:.4s;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h2 {
+  font-weight:900;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
